@@ -31,6 +31,14 @@ const count = ref(0)
         <q-skeleton type="QBtn" />
       </q-card-actions>
     </q-card>
+
+    <i18n-t keypath="hi">
+      <template #test>
+        <h1>
+          Hello
+        </h1>
+      </template>
+    </i18n-t>
   </div>
 </template>
 
