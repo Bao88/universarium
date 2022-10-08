@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import { Quasar } from 'quasar'
 import { createI18n } from 'vue-i18n'
+import pinia from './stores/stores'
 import router from "./router/routes"
 
 // Import icon libraries
@@ -25,6 +26,8 @@ const i18n = createI18n({
 })
 
 const app = createApp(App)
+
+app.use(pinia)
 app.use(i18n)
 app.use(Quasar, {
     plugins: {}, // import Quasar plugins and add here

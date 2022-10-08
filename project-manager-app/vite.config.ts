@@ -8,7 +8,8 @@ export default ({ mode }) => {
     base: "/admin/",
     plugins: [
       vue({
-        template: { transformAssetUrls }
+        template: { transformAssetUrls },
+        reactivityTransform: true
       }),
       quasar()
     ]

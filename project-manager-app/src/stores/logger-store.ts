@@ -1,0 +1,1 @@
+// Show cookies and ask if we can log user interaction and navigation
